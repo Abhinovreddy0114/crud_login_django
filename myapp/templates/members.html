@@ -1,0 +1,16 @@
+{% load static%}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Members</title>
+    <link rel = 'stylesheet' type="text/css" href ="{%static 'styles.css'%}">
+</head>
+<body>
+    <h1>Members List</h1>
+    <ul>
+        {% for member in members %}
+            <li>{{ member.firstname }} {{ member.lastname }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
